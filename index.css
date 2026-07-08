@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.font-body {
+  font-family: 'IBM Plex Sans Arabic', 'Tahoma', sans-serif;
+}
+.font-display {
+  font-family: 'Noto Kufi Arabic', 'IBM Plex Sans Arabic', sans-serif;
+}
+.font-figures {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.ledger-card {
+  background-color: #FBFCF9;
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 26px, #E1E7DA 27px);
+  border-right: 3px solid #B23B3B;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9D2C1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    display: block !important;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "appId": "com.myshop.accounting",
+  "appName": "النظام المحاسبي",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
